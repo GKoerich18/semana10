@@ -5,12 +5,12 @@ import lombok.Data;
 
 @Entity
 @Data
-@Table(name = "Aluno")
-public class AlunoEntity {
+@Table(name = "Material")
+public class MaterialEntity {
     @Id
     @GeneratedValue
             (strategy = GenerationType.IDENTITY)
     private Long id;
-    private String nome;
+    private String descricao;
 
 }

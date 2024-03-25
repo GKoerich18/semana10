@@ -17,9 +17,11 @@ public class AgendaEntity {
     private Long id;
 
     @ManyToOne
+    @JoinColumn(name= "tutor_id")
     private TutorEntity tutor;
 
     @ManyToOne
+    @JoinColumn(name= "aluno_id")
     private AlunoEntity aluno;
 
     private Date data;
